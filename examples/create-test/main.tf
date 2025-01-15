@@ -24,6 +24,6 @@ module "artifact_registry_repository" {
   }
 
   vulnerability_scanning_config = { # 취약점 스캔 설정
-    enablement_config = "ENABLED"   # 스캔 활성화
+    enablement_config = ""   # 스캔 활성화
   }
 }
