@@ -38,9 +38,9 @@ output "uri" {
   value       = "https://${google_artifact_registry_repository.artifact_repository.location}-docker.pkg.dev/${var.project}/${google_artifact_registry_repository.artifact_repository.name}"
 }
 
-output "project_id" {
+output "project" {
   description = "Artifact Registry Repository가 속한 GCP 프로젝트 ID"
-  value       = google_artifact_registry_repository.artifact_repository.project_id
+  value       = google_artifact_registry_repository.artifact_repository.project
 }
 
 output "kms_key_name" {

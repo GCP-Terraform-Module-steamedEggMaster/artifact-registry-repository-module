@@ -8,6 +8,6 @@ output "artifact_registry_repository_details" {
     create_time      = module.artifact_registry_repository.create_time      # Artifact Registry Repository 생성 시간
     update_time      = module.artifact_registry_repository.update_time      # Artifact Registry Repository 업데이트 시간
     effective_labels = module.artifact_registry_repository.effective_labels # Artifact Registry Repository의 최종 레이블
-    project_id       = module.artifact_registry_repository.project_id       # Artifact Registry Repository가 속한 GCP 프로젝트 ID
+    project          = module.artifact_registry_repository.project          # Artifact Registry Repository가 속한 GCP 프로젝트 ID
   }
 }
