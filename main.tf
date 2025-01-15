@@ -10,6 +10,7 @@ resource "google_artifact_registry_repository" "artifact_repository" {
   location     = var.location     # 저장소 위치 (Optional)
   project      = var.project      # 저장소가 속한 GCP 프로젝트 ID (Optional)
 
+  ### 저장소 포맷에 따라 선택해서 설정하면 됨
   # Docker 저장소 설정
   dynamic "docker_config" {
     for_each = var.docker_config != null ? [var.docker_config] : []
