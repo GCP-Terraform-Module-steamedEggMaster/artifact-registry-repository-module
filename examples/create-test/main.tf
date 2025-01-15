@@ -18,11 +18,6 @@ module "artifact_registry_repository" {
     immutable_tags = true # 태그 수정 방지 여부
   }
 
-  maven_config = {                        # Maven 저장소 설정
-    allow_snapshot_overwrites = false     # Snapshot 덮어쓰기 비허용
-    version_policy            = "RELEASE" # 버전 정책
-  }
-
   vulnerability_scanning_config = { # 취약점 스캔 설정
     enablement_config = ""   # 스캔 활성화
   }
