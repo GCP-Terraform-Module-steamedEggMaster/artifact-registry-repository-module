@@ -40,7 +40,7 @@ output "uri" {
 
 output "project_id" {
   description = "Artifact Registry Repository가 속한 GCP 프로젝트 ID"
-  value       = google_artifact_registry_repository.artifact_repository.project
+  value       = var.project
 }
 
 output "kms_key_name" {
