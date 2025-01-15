@@ -35,7 +35,7 @@ output "effective_labels" {
 
 output "uri" {
   description = "Artifact Registry Repository의 URI (참조용)"
-  value       = "https://${google_artifact_registry_repository.artifact_repository.location}-docker.pkg.dev/${var.project}/${google_artifact_registry_repository.artifact_repository.name}"
+  value       = "https://${google_artifact_registry_repository.artifact_repository.location}-docker.pkg.dev/${google_artifact_registry_repository.artifact_repository.project}/${google_artifact_registry_repository.artifact_repository.name}"
 }
 
 output "project" {
